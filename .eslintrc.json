@@ -1,0 +1,8 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-restricted-globals": ["error", { "name": "localStorage", "message": "Use src/lib/safe-storage.ts (non-sensitive keys only)." }]
+  }
+}
